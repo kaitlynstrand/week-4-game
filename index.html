@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+<div id="header">
+	<h1> Get That Bling! </h1>
+</div>
+
+<div id="instructions">
+	
+	<ul>
+		
+		<li> You will be given a random number at the start of the game </li>
+	
+			<br>
+		
+		<li> There are four gemstones below. By clicking on a crystal you will add a specific amount of points to your total score </li>
+		
+			<br>
+		
+		<li> You can win the game by matching your total score to the random number, you lose the game if your total score goes above the random number </li>
+	
+			<br>
+	
+		<li> The value of each gemstone is hidden until you click on it, so keep an eye on them! </li>
+	
+			<br>
+	
+		<li> Each time the game restarts, the value of the gemstones will be reset </li>
+		
+	</ul>
+
+	<p> GOOD LUCK! </p>
+
+</div>
+
+<div class="randomNum">
+	<h2>Target Number: <span id="randomTotal"></span></h2>
+</div>
+
+<div = class="results">
+	<h2>Got That Bling! <span id="numWins"></span></h2>
+	<h2>Lost That Bling! <span id="numLosses"></span></h2>
+</div> 
+
+<div class="parentbling">
+	<img src="assets/images/bluegem.png" class="gemimg" id=bluegem alt="Blue Bling" type="button">
+	<img src="assets/images/greengem.png" class="gemimg" id=greengem alt="Green Bling" type="button">
+	<img src="assets/images/pinkgem.png" class="gemimg" id=pinkgem alt="Pink Bling" type="button">
+	<img src="assets/images/yellowgem.png" class="gemimg" id=yellowgem alt="Yellow Bling" type="button">
+</div>
+
+<div class="userAddedTotal">
+	<h2>Check Out My Bling! <span id="userAddedFinal"></span></h2>
+</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2/2/0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
+
+
+

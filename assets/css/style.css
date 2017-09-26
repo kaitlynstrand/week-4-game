@@ -1,0 +1,81 @@
+/* ELEMENTS* (BODY, DIVS, H1, H3, SPANS)*/
+
+
+
+/* BODY*/
+body {
+	font-family: "Georgia", Georgia, sans-serif;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+
+
+
+/* CLASSES*/
+.randomNumber {
+
+}
+
+.results {
+
+}
+
+.parentBling {
+	height: 60px;
+	margin: 10px;
+}
+.gemimg {
+	height: 60px;
+	margin: 10px;
+
+}
+
+.userTotal {
+
+}
+
+/* IDs*/
+
+#header {
+
+}
+
+#instructions {
+
+}
+
+#randomChoice {
+
+}
+
+#numWins {
+
+
+}
+
+#numLosses {
+
+}
+
+#bluegem {
+
+}
+
+#greengem {
+
+}
+
+#pinkgem {
+
+}
+
+#yellowgem {
+
+}
+
+#addedTotal {
+
+}
