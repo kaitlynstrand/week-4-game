@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
 //define variable that generates random number when game starts/resets (19-120)	
-generator = Math.floor(Math.random()*120) + 1
+var randomNum = Math.floor(Math.random()*120) + 1
 
 //putting the generated random number on the randomNum in html (what is different between text and append here?)
-$("#randomTotal").text(generator);
+$("#randomTotal").text(randomNum);
 
 //need to assign random number 1-12 to four variables (gems) need to link to buttons
 var blue = Math.floor(Math.random()*12) + 1
@@ -47,36 +47,59 @@ function bad() {
 //reset userAddedNum = 0; trigger reset for generated number; reassign random numbers to gems
 function reset() {
 generator=Math.floor(Math.random()*120) + 1;
-$("randomTotal").text(generator);
+$("randomTotal").text(randomNum);
 
 var blue = Math.floor(Math.random()*12) + 1
 var green = Math.floor(Math.random()*12) + 1
 var pink = Math.floor(Math.random()*12) + 1
 var yellow = Math.floor(Math.random()*12) + 1
-
+userAddedTotal = 0
+$("#userAddedFinal").text(userAddedTotal);
 
 }
-
-
 
 $("#bluegem").on("click", function() {
 	userAddedTotal = userAddedTotal + blue;
 	$("#userAddedFinal").text(userAddedTotal);
+	if (userTotal == Random){
+          good();
+        }
+        else if ( userTotal > Random){
+          bad();
+        }   
 });
 
 $("#greengem").on("click", function() {
 	userAddedTotal = userAddedTotal + green;
 	$("#userAddedFinal").text(userAddedTotal);
+	if (userTotal == Random){
+          good();
+        }
+        else if ( userTotal > Random){
+          bad();
+        }   
 });
 
 $("#pinkgem").on("click", function() {
 	userAddedTotal = userAddedTotal + pink;
 	$("#userAddedFinal").text(userAddedTotal);
+	if (userTotal == Random){
+          good();
+        }
+        else if ( userTotal > Random){
+          bad();
+        }   
 });
 
 $("#yellowgem").on("click", function() {
 	userAddedTotal = userAddedTotal + yellow;
 	$("#userAddedFinal").text(userAddedTotal);
+	if (userTotal == Random){
+          good();
+        }
+        else if ( userTotal > Random){
+          bad();
+        }   
 
 });
 })
